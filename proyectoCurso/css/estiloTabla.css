@@ -1,0 +1,107 @@
+body {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+   
+#volver{
+    padding-top: 10px;
+    padding-bottom: 3px;
+    width: 250px;
+}
+
+#borrar{
+    padding-top: 30%;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.campos{
+    margin: auto;
+    width: 25%;
+    background-color:#DEB9FA;
+}
+
+.mensajes{
+    margin: auto;
+    width: 25%;
+    background-color:#DEB9FA;
+}
+
+
+.fuente{
+    font-family: 'Trebuchet MS';
+
+}
+
+.regis{
+    background-color: #DEB9FA;
+    width:1830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border: 5px double #976af8;
+    border-collapse: collapse;
+}
+
+    .regis th{
+        padding: 8px;
+        border-right: 1px solid rgb(240, 214, 255);
+        border-bottom: 3px solid rgb(240, 214, 255);
+        background-color: #BE9CFF;
+    }
+
+    .regis td{
+        border: 1px solid  rgb(240, 214, 255);
+        padding: 8px 12px 8px 12px;
+        
+    }
+
+    /*quería hacer que el scrollbar estuviese solo en el tbody y tener el thead fijo, pero por ahora no he podido*/
+
+.table-container {
+       
+        margin-left: auto;
+      
+    }
+    
+    table {
+        display: block;
+        height: 80%;
+        overflow-y: scroll;
+    }
+   
+
+.bluebox{
+    position: relative; 
+    width: 12%; 
+    height: 35%; 
+    margin: 15% 0% 1% 1%; 
+    background-color: #F4E4FC;
+    background-image: linear-gradient(180deg, #D0A8FF 0%, #DEB9FA 80%);
+    box-shadow: 1px 1px 2px 2px #B87FFF;
+    border: 0;
+    display: inline-block;
+    transition: box-shadow .15s,transform .15s;
+    touch-action: manipulation;
+}
+
+   .bluebox:focus {
+        box-shadow: #976af8 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    }
+    
+    .bluebox:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #976af8 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+
+.boton {
+    border: 1.5px dashed #976af8;
+    background: #D0A8FF;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 1px 1px #B87FFF;
+} 
+
+    

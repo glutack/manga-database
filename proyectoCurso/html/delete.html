@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Eliminar manga</title>
+	<link rel="stylesheet" type="text/css" href="../css/estiloTabla.css" />
+</head>
+
+<body style="text-align:center" background="../img/fondo.png">
+	<div id="fondo" class="fuente">
+		<a href="../menu.html"><img src="../img/volver.png" id="volver" /></a>
+
+		<form action="../php/delete.php" method="POST">
+
+			<fieldset class="campos">
+
+				<legend>
+					<h3>Introduzca el manga que desea eliminar:</h3>
+				</legend>
+				<input type="text" name="titulo" placeholder="Introduzca titulo #volumen"><br />
+
+				<br />
+				<input type="submit" value="Eliminar"><br /><br />
+
+			</fieldset>
+
+		</form>
+
+	</div>
+</body>
+
+</html>

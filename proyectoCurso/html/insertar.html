@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Añadir manga</title>
+	<link rel="stylesheet" type="text/css" href="../css/estiloTabla.css" />
+</head>
+
+<body style="text-align:center" background="../img/fondo.png">
+	<div id="fondo" class="fuente">
+		<a href="../menu.html"><img src="../img/volver.png" id="volver" /></a>
+
+		<!--No he sabido solucionar que si no se introducen "iniciolectura", "finlectura" y "capitulo" la celda se quede en blanco, pero para el futuro :D-->
+
+		<form action="../php/insertar.php" method="POST" enctype="multipart/form-data">
+
+			<fieldset class="campos">
+				<legend>
+					<h2>Datos del manga</h2>
+				</legend>
+				<input type="hidden" name="leido" />
+				<input type="checkbox" name="leido" id="checkbox1" value="Sí"><label for="leido">Leído</label>
+				<input type="hidden" name="coleccion" />
+				<input type="checkbox" name="coleccion" id="checkbox1" value="Sí"><label for="leido">En colección</label><br /><br />
+				<input type="text" name="titulo" size="35" placeholder="Titulo #tomo" required><br />
+				<input type="text" name="autor" size="30" placeholder="Autor (apellido, nombre)" required><br /><br />
+				<select name="demo" required>
+					<option value="">Demografía</option>
+					<option value="Kodomo">Kodomo</option>
+					<option value="Shojo">Shojo</option>
+					<option value="Shonen">Shonen</option>
+					<option value="BL">Boy's Love</option>
+					<option value="Josei">Josei</option>
+					<option value="Seinen">Seinen</option>
+				</select><br /><br />
+				<select multiple name="genero[]" size="6" required>
+					<option value="">Género</option>
+					<option value="Acción">Acción</option>
+					<option value="Aventura">Aventura</option>
+					<option value="Ciencia ficción">Ciencia ficción</option>
+					<option value="Comedia">Comedia</option>
+					<option value="Drama">Drama</option>
+					<option value="Erótica">Erótica</option>
+					<option value="Fantasía">Fantasía</option>
+					<option value="Isekai">Isekai</option>
+					<option value="Maho Shojo">Maho Shojo</option>
+					<option value="Mecha">Mecha</option>
+					<option value="Misterio">Misterio</option>
+					<option value="Nekketsu">Nekketsu</option>
+					<option value="Romance">Romance</option>
+					<option value="Slice of life">Slice of Life</option>
+					<option value="Spokon">Spokon</option>
+					<option value="Sobrenatural">Sobrenatural</option>
+					<option value="Yuri">Yuri</option>
+				</select><br /><br />
+				<label for=inicio>Fecha de publicación</label></br>
+				<input type="date" name="inicio"><br /><br />
+			</fieldset>
+
+			<fieldset class="campos">
+				<legend>
+					<h2>Datos de lectura</h2>
+				</legend>
+				<label for=iniciolectura>Inicio de lectura</label><br />
+				<input type="date" name="iniciolectura"><br />
+				<label for=iniciolectura>Fin de lectura</label><br />
+				<input type="date" name="finlectura"><br /><br />
+				<input type="number" name="capitulo" step="any" placeholder="Último capitulo leído"><br />
+				<textarea name="introTexto" cols="40" rows="4" placeholder="Editorial, tomos..."></textarea>
+			</fieldset>
+			<br/>
+			<fieldset class="campos">
+				<br/>
+				<input type="submit" value="Añadir manga">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" name="reset" value="Borrar datos introducidos" /><br /><br />
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+
+</html>

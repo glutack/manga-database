@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Buscador</title>
+	<link rel="stylesheet" type="text/css" href="../css/estiloTabla.css" />
+</head>
+
+<body style="text-align:center" background="../img/fondo.png">
+	<div id="fondo" class="fuente">
+		<a href="../menu.html"><img src="../img/volver.png" id="volver" /></a>
+
+		<form action="../php/buscador.php" method="POST">
+			<fieldset class="campos">
+
+				<legend>
+					<h4>Reglas de búsqueda:</h4>
+				</legend>
+				<input type="hidden" name="leido" />
+				<input type="checkbox" name="leido" id="checkbox1" value="Sí"><label for="leido">Leído</label>
+				<input type="hidden" name="coleccion" />
+				<input type="checkbox" name="coleccion" id="checkbox1" value="Sí"><label for="leido">En colección</label><br /><br />
+				<input type="text" name="titulo" size="35" placeholder="Titulo #tomo" ><br />
+				<input type="text" name="autor" size="30" placeholder="Autor (apellido, nombre)" ><br /><br />
+				<select name="demo">
+					<option value="">Demografía</option>
+					<option value="Kodomo">Kodomo</option>
+					<option value="Shojo">Shojo</option>
+					<option value="BL">Boy's Love</option>
+					<option value="Shonen">Shonen</option>
+					<option value="Josei">Josei</option>
+					<option value="Seinen">Seinen</option>
+				</select><br /><br />
+				<select multiple name="genero[]" size="6" name="genero">
+					<option value="">Género</option>
+					<option value="Acción">Acción</option>
+					<option value="Aventura">Aventura</option>
+					<option value="Ciencia ficción">Ciencia ficción</option>
+					<option value="Comedia">Comedia</option>
+					<option value="Drama">Drama</option>
+					<option value="Erótica">Erótica</option>
+					<option value="Fantasía">Fantasía</option>
+					<option value="Isekai">Isekai</option>
+					<option value="Maho Shojo">Maho Shojo</option>
+					<option value="Mecha">Mecha</option>
+					<option value="Misterio">Misterio</option>
+					<option value="Nekketsu">Nekketsu</option>
+					<option value="Romance">Romance</option>
+					<option value="Slice of life">Slice of Life</option>
+					<option value="Spokon">Spokon</option>
+					<option value="Sobrenatural">Sobrenatural</option>
+					<option value="Yuri">Yuri</option>
+				</select><br /><br />
+<!--la idea aquí es hacer los buscadores un poco más flexibles respecto a las fechas y poder buscar solo por año o mes y así, pero en ello estamos-->
+				<label for=inicio>Fecha de publicación</label></br>
+				<input type="date" name="inicio"><br /><br />
+				<label for=iniciolectura>Inicio de lectura</label><br />
+				<input type="date" name="iniciolectura"><br /><br />
+				<label for=iniciolectura>Fin de lectura</label><br />
+				<input type="date" name="finlectura"><br /><br />
+
+				<br />
+				<input type="submit" value="Buscar">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" name="reset" value="Borrar datos introducidos" /><br /><br />
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>

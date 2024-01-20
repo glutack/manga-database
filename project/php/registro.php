@@ -13,7 +13,7 @@
 		$query = "SELECT * FROM datos";
 
 		if ($result = $conn->query($query)) {
-			echo '<a href="../menu.html"><img src="../img/volver.png" id="volver"/></a>';
+			echo '<a href="../index.html"><img src="../img/volver.png" id="volver"/></a>';
 			echo "<h3>Se han devuelto " . $result->num_rows . " resultados</h3>";
 
 			echo "<div class='table-container'><table style='text-align:center' class='regis'";
@@ -41,7 +41,7 @@
 			}
 			echo "</table></div>";
 		} else {
-			echo '<a href="../menu.html"><img src="../img/volver.png" id="volver"/></a>';
+			echo '<a href="../index.html"><img src="../img/volver.png" id="volver"/></a>';
 			echo "<fieldset class='mensajes'>
 			<h3>Algo ha ido mal, no se pueden mostrar los registros.</h3>
 			</fieldset>";
